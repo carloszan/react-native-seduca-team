@@ -1,10 +1,14 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import styled from 'styled-components/native';
+
+const Container = styled.View``;
+
+const Text = styled.Text``;
 
 export default () => {
   return (
-    <View>
-      <Text>Test</Text>
-    </View>
+    <Container>
+      <Text>Deu certo</Text>
+    </Container>
   );
-};
+}
