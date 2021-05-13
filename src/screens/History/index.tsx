@@ -1,10 +1,10 @@
 import React from 'react';
-import {Container, Text} from './styles';
+import {Container, TopText} from './styles';
 
 export default () => {
   return (
     <Container>
-      <Text>History</Text>
+      <TopText>Historico</TopText>
     </Container>
   );
 };
