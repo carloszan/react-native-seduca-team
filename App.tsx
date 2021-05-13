@@ -1,14 +1,16 @@
 import React from 'react';
-import styled from 'styled-components/native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 
-const Container = styled.View``;
-
-const Text = styled.Text``;
+const Stack = createStackNavigator();
 
 export default () => {
   return (
-    <Container>
-      <Text>Deu certo</Text>
-    </Container>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Preload" component={Preload} />
+        <Stack.Screen name="Home" component={Home} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
