@@ -9,3 +9,5 @@ export const TopText = styled.Text`
   font-size: 16px;
   margin: 30px;
 `;
+
+export const HistoryList = styled.FlatList``;
